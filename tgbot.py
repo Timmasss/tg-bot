@@ -5,7 +5,7 @@ from aiogram.filters import Command
 from aiogram.types import Message 
  
 logging.basicConfig(level=logging.INFO) 
-bot = Bot(token='7427831106:AAHxjPyOYbkwYzastoKNhsIXNY-4NrLohDE') 
+bot = Bot(token='') 
 dp = Dispatcher() 
  
 @dp.message(Command("start")) 
@@ -147,4 +147,5 @@ async def main():
     await dp.start_polling(bot) 
  
 if __name__=="__main__": 
+
     asyncio.run(main())
